@@ -281,3 +281,5 @@ data_visualization_plots()
 
 with open("./data/interim/task1_data_processed.pkl", "wb") as file:
     pickle.dump("./task1_data_exploration_cleaning.py", file)
+
+df.to_pickle("./data/interim/cleaned.pkl")
