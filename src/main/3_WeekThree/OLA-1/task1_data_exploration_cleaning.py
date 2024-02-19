@@ -53,7 +53,7 @@ outlier_columns = list(df.columns[:8])
         Identifying the extreme outliers before filling missing values,
         because there's a significant amount of NaN data of column "Age".
     Pros: 
-        Maintains original data distributin.
+        Maintains original data distribution.
         Avoids skewing the analysis: Filling missing values, 
         especially if there are many, can significantly alter the distribution 
         of our data. If we calculate outliers after filling in missing values, 
@@ -213,7 +213,7 @@ data = data[data["Name"] != "Unknown climber"]
 
 def data_visualization_plots():
 
-    # Distribution of Age before filling missing values
+    # Distribution of Age after filling missing values
     age_distribution()
 
     # Age related to Cause of death
