@@ -281,3 +281,5 @@ data_visualization_plots()
 
 # Creating pickle file
 df.to_pickle("../OLA-1/data/interim/task1_data_processed.pkl")
+
+df.to_pickle("./data/interim/cleaned.pkl")
