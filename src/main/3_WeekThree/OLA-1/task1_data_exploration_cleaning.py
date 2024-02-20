@@ -279,5 +279,5 @@ def data_visualization_plots():
 
 data_visualization_plots()
 
-with open("./data/interim/task1_data_processed.pkl", "wb") as file:
-    pickle.dump("./task1_data_exploration_cleaning.py", file)
+# Creating pickle file
+df.to_pickle("../OLA-1/data/interim/task1_data_processed.pkl")
