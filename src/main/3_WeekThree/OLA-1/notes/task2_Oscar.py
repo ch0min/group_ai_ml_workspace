@@ -8,7 +8,7 @@ import pickle
 
 
 # import dataframe from cleaned dataset
-df = pd.read_pickle("data/interim/cleaned.pkl")
+df = pd.read_pickle("../data/interim/cleaned.pkl")
 df.info()
 df.head()
 df.tail()

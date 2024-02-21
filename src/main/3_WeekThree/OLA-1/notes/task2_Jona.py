@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt 
 
-csv_path = "../OLA-1/data/raw/me_climbing_deaths.csv"
+csv_path = "../data/raw/me_climbing_deaths.csv"
 data = pd.read_csv(csv_path)
 
 ############################

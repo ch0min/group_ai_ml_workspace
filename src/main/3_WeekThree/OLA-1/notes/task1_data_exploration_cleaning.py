@@ -22,7 +22,7 @@ import pickle
 # 2. Data Exploration
 # --------------------------------------------------------------
 
-me_climbing_deaths = pd.read_csv("../OLA-1/data/raw/me_climbing_deaths.csv")
+me_climbing_deaths = pd.read_csv("../data/raw/me_climbing_deaths.csv")
 
 df = me_climbing_deaths
 
