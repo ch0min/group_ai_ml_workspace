@@ -1,10 +1,12 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt 
+import pickle
 
-csv_path = "../OLA-1/data/raw/me_climbing_deaths.csv"
-data = pd.read_csv(csv_path)
 
+data = pd.read_pickle("../OLA-1/data/interim/task1_data_processed.pkl")
+
+print(type(data))
 ############################
 ########## TASK 2 ##########
 ############################
@@ -19,7 +21,7 @@ labels = ['Young', 'Middle-aged', 'Senior']
 data['Age Group'] = pd.cut(data['Age'], bins=bins, labels=labels, right=False)
 
 # create new filtered Data to exclude rows where 'Age' is NaN so
-# we can show new age groups
+# that we can show new age groups
 data_non_nan = data.dropna(subset=['Age'])
 
 
@@ -79,3 +81,4 @@ plt.title('Top 10 Causes of Death')
 plt.xlabel('Frequency')
 plt.ylabel('Cause of Death')
 plt.show()
+
