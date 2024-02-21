@@ -1,81 +1,118 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 import seaborn as sns
-import matplotlib.pyplot as plt 
+import pickle
 
-csv_path = "../OLA-1/data/raw/me_climbing_deaths.csv"
-data = pd.read_csv(csv_path)
+# ************************************************************** #
+#                                                                #
+#      TASK 2: FEATURE ENGINEERING & DESCRIPTIVE STATISTICS      #
+#                                                                #
+# ************************************************************** #
 
-############################
-########## TASK 2 ##########
-############################
+# Load dataset
+df = pd.read_pickle("../OLA-1/data/interim/task1_data_processed.pkl")
 
-### 1. Binning "age" into young/middle-aged/senior ###
+df.info()
 
-# Define the bins with labels
-bins = [0, 30, 50, 100]
-labels = ['Young', 'Middle-aged', 'Senior']
-
-# Create new 'Age Group' column
-data['Age Group'] = pd.cut(data['Age'], bins=bins, labels=labels, right=False)
-
-# create new filtered Data to exclude rows where 'Age' is NaN so
-# we can show new age groups
-data_non_nan = data.dropna(subset=['Age'])
+# --------------------------------------------------------------
+# 1. Feature Engineering
+# --------------------------------------------------------------
 
 
-print(data_non_nan[['Age', 'Age Group']].head())
+# Defining age bins and labels
+def bin_age(
+    dataset,
+    column_name="Age",
+    bins=[0, 20, 40, 60, np.inf],
+    labels=["0-20", "21-40", "41-60", "61+"],
+):
+    """
+    Bins the age column of the dataset into specified categories.
 
-# Apply one-hot encoding on causes of death
-data_encoded = pd.get_dummies(data, columns=['Cause of death'])
+    Args:
+        dataset: The dataset containing the data
+        column_name: The name of the col to be binned.
+        bins: The edges of the bins as a list.
+        labels: The labels for the bins.
 
-print(data_encoded.head())
+    Returns: A dataset with an additional column for the age_groups.
 
-
-
-
-### 2. Descriptive Statistics ###
-
-# Calculate mean
-mean = data.mean(numeric_only=True)
-
-# Calculate median
-median = data.median(numeric_only=True)
-
-# Calculate standard deviation
-std_dev = data.std(numeric_only=True)
-
-print("Mean Values:\n", mean)
-print("\nMedian Values:\n", median)
-print("\nStandard Deviation Values:\n", std_dev)
-
-
-# count frequency for categorial feature (example: cause of death)
-cause_of_death_counts = data['Cause of death'].value_counts()
-
-# Display the frequency counts
-print("Frequency of Each Category in 'Cause of death':\n", cause_of_death_counts)
+    """
+    dataset["Age_Group"] = pd.cut(
+        dataset[column_name], bins=bins, labels=labels, include_lowest=True
+    )
+    return dataset
 
 
+df = bin_age(df)
+
+print(df["Age_Group"].value_counts())
 
 
-### 3. Visualization ###
+# Implementing one-hot encoding for categorical variables
 
-# Create a box plot for the 'Age' column
-plt.figure(figsize=(10, 6))
-sns.boxplot(x=data['Age'])
-plt.title('Box Plot of Age') 
-plt.xlabel('Age')
-plt.show() 
+# df["Nationality"].value_counts()
+# ohe_nationality = pd.get_dummies(df, columns=["Nationality"])
+# ohe_nationality.head(20)
+
+# df["Expedition"].value_counts()
+# ohe_expedition = pd.get_dummies(df, columns=["Age_Group"])
+# ohe_expedition.head(20)
+
+df["Age_Group"].value_counts()
+ohe_age = pd.get_dummies(df, columns=["Age_Group"])
+ohe_age.head(20)
 
 
-# Visualize the distribution of causes of death using bar plots.
-# Count the frequency of each category in 'Cause of death' and select the top 10
-top_causes = data['Cause of death'].value_counts().head(10)
+# --------------------------------------------------------------
+# 2. Descriptive Statistics
+# --------------------------------------------------------------
 
-# Create a bar plot for the top 10 causes of death
-plt.figure(figsize=(12, 8))
-sns.barplot(x=top_causes.values, y=top_causes.index, palette='viridis')
-plt.title('Top 10 Causes of Death')
-plt.xlabel('Frequency')
-plt.ylabel('Cause of Death')
+# Calculate the mean, median, and standard deviation for numerical features.
+age_descriptive_stats = df["Age"].describe()
+
+# For categorical features, count the frequency of each category.
+freq_name = df["Name"].value_counts()
+freq_date = df["Date"].value_counts()
+freq_age_group = df["Age_Group"].value_counts()
+freq_nationality = df["Nationality"].value_counts()
+freq_cod = df["Cause of death"].value_counts()
+freq_loc = df["Location"].value_counts()
+
+
+# --------------------------------------------------------------
+# 3. Visualization
+# --------------------------------------------------------------
+
+# Use seaborn to create box plots for numerical features to identify outliers.
+"""
+    Identifying outliers of "Age" after filling missing values of "Age",
+    will give a skewed representation of outliers, since there was approx. 150 missing
+    values from "Age" in the beginning, and we came to the conclusion to fill the
+    missing data with the median.
+    
+    This boxplot will therefore show an imprecise representation of outliers,
+    since there's a significant amount that are 38 of age.
+    
+"""
+plt.figure(figsize=(8, 10))
+sns.boxplot(y=df["Age"])
+plt.title("Boxplot for Age (imprecise)")
+plt.xlabel("Age")
+plt.savefig("./figures/age_boxplot_imprecise.png")
 plt.show()
+
+
+# Visualize the distribution of categorical features using bar plots.
+"""
+    We already visualized categorical features using bar plots in
+    Task 1: [4. Data Visualization]
+    
+    Visualizations can be found in ./figures directory.
+"""
+
+
+# Creating pickle file
+df.to_pickle("../OLA-1/data/interim/task2_data_processed.pkl")
+
