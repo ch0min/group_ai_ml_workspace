@@ -22,7 +22,7 @@ import pickle
 # 2. Data Exploration
 # --------------------------------------------------------------
 
-me_climbing_deaths = pd.read_csv("../OLA-1/data/raw/me_climbing_deaths.csv")
+me_climbing_deaths = pd.read_csv("../data/raw/me_climbing_deaths.csv")
 
 df = me_climbing_deaths
 
@@ -53,7 +53,7 @@ outlier_columns = list(df.columns[:8])
         Identifying the extreme outliers before filling missing values,
         because there's a significant amount of NaN data of column "Age".
     Pros: 
-        Maintains original data distributin.
+        Maintains original data distribution.
         Avoids skewing the analysis: Filling missing values, 
         especially if there are many, can significantly alter the distribution 
         of our data. If we calculate outliers after filling in missing values, 
@@ -213,7 +213,7 @@ data = data[data["Name"] != "Unknown climber"]
 
 def data_visualization_plots():
 
-    # Distribution of Age before filling missing values
+    # Distribution of Age after filling missing values
     age_distribution()
 
     # Age related to Cause of death
@@ -279,7 +279,7 @@ def data_visualization_plots():
 
 data_visualization_plots()
 
-with open("./data/interim/task1_data_processed.pkl", "wb") as file:
-    pickle.dump("./task1_data_exploration_cleaning.py", file)
+# Creating pickle file
+df.to_pickle("../OLA-1/data/interim/task1_data_processed.pkl")
 
 df.to_pickle("./data/interim/cleaned.pkl")
