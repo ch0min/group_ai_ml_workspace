@@ -1,0 +1,311 @@
+Name,Date,Age,Expedition,Nationality,Cause of death,Location,Age_outlier
+Dorje,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Lhakpa,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Norbu,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Pasang,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Pema,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Sange,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Temba,"June 7, 1922",38.0,1922 British Mount Everest Expedition,Nepal,Avalanche,Below North Col,True
+Man Bahadur,"May 13, 1924",38.0,1924 British Mount Everest Expedition,Nepal,Pneumonia,Above Rongbuk B.C.,True
+Lance-Naik Shamsherpun,"May 17, 1924",38.0,1924 British Mount Everest Expedition,Nepal,Brain hemorrhage,Above Rongbuk B.C.,True
+Andrew Irvine,"June 9, 1924",22.0,1924 British Mount Everest Expedition,United Kingdom,Unknown. Body never found,N.E. Ridge,False
+George Mallory,"June 9, 1924",37.0,1924 British Mount Everest Expedition,United Kingdom,Possible ice axe injury following a fall. Body found in 1999,N.E. Ridge,False
+Maurice Wilson,"May 31, 1934",36.0,Solo Expedition,United Kingdom,"Possible exhaustion, exposure or starvation. Body found 1935",East Rongbuk Glacier,False
+Dorje Mingma,"October 31, 1952",38.0,Swiss Expedition,Nepal,Falling ice,Lhotse Face,True
+Wang Ji,"April 11, 1960",38.0,Chinese Expedition Northern Slope,China,Mountain sickness,Icefall,True
+Shao Shi-Ching,"April 29, 1960",38.0,Chinese Expedition Northern Slope,China,Avalanche,N.E. Ridge,True
+Nawang Tshering,"April 28, 1962",38.0,Chinese Expedition Northern Slope,Nepal,Avalanche,Lhotse face,True
+Jake Breitenbach,"March 23, 1963",27.0,Norman Dyhrenfurth's American Mount Everest Expedition,United States,Crushed under serac,Icefall,False
+Ma Gao-shu,"May 1, 1966",38.0,Chinese Everest Expedition,China,Fall,Icefall,True
+Phu Dorjee Sherpa,"October 18, 1969",38.0,Japanese Everest Expedition,Nepal,Fall into a crevasse,Icefall,True
+Nima Dorje,"April 5, 1970",38.0,Japanese Skiing Expedition,Nepal,Avalanche,Icefall,True
+Kunga Norbu,"April 5, 1970",38.0,Japanese Skiing Expedition,Nepal,Avalanche,Icefall,True
+Mima Norbu,"April 5, 1970",38.0,Japanese Skiing Expedition,Nepal,Avalanche,Icefall,True
+Pasang,"April 5, 1970",38.0,Japanese Skiing Expedition,Nepal,Avalanche,Icefall,True
+Kami Tshering,"April 5, 1970",38.0,Japanese Skiing Expedition,Nepal,Avalanche,Icefall,True
+Kyak Tsering,"April 9, 1970",36.0,Japanese Skiing Expedition,Nepal,by fall,5525 m,False
+Kiyoshi Narita,"April 21, 1970",38.0,Japanese Skiing Expedition,Japan,Heart attack,6150m,True
+Harsh Vardhan,"April 18, 1971",31.0,International Expedition of 1971,India,Succumbed after falling and being suspended above a crevasse during a blizzard,6900m,False
+Tony Tighe,"November 16, 1972",38.0,Mt. Qomolangma expedition,Australia,Crushed under serac,Icefall,True
+Jangbu,"October 12, 1973",38.0,Adventure Consultants,Nepal,Avalanche,S.W. Face,True
+Gérard Devouassoux,"September 9, 1974",38.0,French West Ridge Direct expedition,France,Avalanche,6400m,True
+Pemba Dorje,"September 9, 1974",38.0,French West Ridge Direct expedition,Nepal,Avalanche,6400m,True
+Lhakpa,"September 9, 1974",38.0,French West Ridge Direct expedition,Nepal,Avalanche,6400m,True
+Nawang Lutuk,"September 9, 1974",38.0,French West Ridge Direct expedition,Nepal,Avalanche,6400m,True
+Nima Wangchu,"September 9, 1974",38.0,French West Ridge Direct expedition,Nepal,Avalanche,6400m,True
+Sanu Wongal,"September 9, 1974",38.0,French West Ridge Direct expedition,Nepal,Avalanche,6400m,True
+Wu Zhuong Yue,"May 4, 1975",38.0,Adventure Consultants,China,"Exhaustion, fall",8500m,True
+Unknown ; deaf-mute Sherpa porter,Aug-75,38.0,1975 British Mount Everest Southwest Face expedition,Nepal,Drowned,Below Base Camp,True
+Mick Burke,"September 26, 1975",34.0,Bonington's 1975 Everest expedition,United Kingdom,Disappearance (likely accidental death during climb),Near Summit,False
+Terry Thompson,"April 10, 1976",38.0,British-Nepal Army Everest Expedition,United Kingdom,Fall into a crevasse,Camp II,True
+Dawa Nuru,"April 18, 1978",38.0,Adventure Consultants,Nepal,Fall into a crevasse,Icefall,True
+Shi Ming-ji,"April 18, 1978",38.0,Chinese Iranian Expedition,China,Fall into a crevasse,Icefall,True
+Ang Phu,"May 16, 1979",38.0,Yugoslavian Expedition,Nepal,Fall,Icefall,True
+Ray Genet,"October 2, 1979",48.0,Gerhard Schmatz German Expedition or 1979 Swabian expedition,United States,"Exposure, exhaustion",8400m S.E. Ridge,False
+Hannelore Schmatz,"October 2, 1979",39.0,Gerhard Schmatz German Expedition or 1979 Swabian expedition,Germany,"Exposure, exhaustion",8400m S.E. Ridge,False
+Wang Hong-bao,"October 12, 1979",38.0,Japanese Alpine Club reconnaissance expedition,China,Avalanche,Below North Col,True
+Lou Lan,"October 12, 1979",38.0,Japanese Alpine Club reconnaissance expedition,China,Avalanche,Below North Col,True
+Nima Thaxi,"October 12, 1979",38.0,Japanese Alpine Club reconnaissance expedition,China,Avalanche,Below North Col,True
+Akira Ube,"May 2, 1980",31.0,Japanese Alpine Society Expedition,Japan,Avalanche,7900m North Face (Hornbein Couloir),False
+Nawang Kersang,"September 6, 1980",38.0,Italian Expedition,Nepal,Fall,Icefall,True
+Mario Piana,"September 22, 1980",38.0,Italian Expedition,Italy,Crushed under serac,Lhotse Face,True
+Noboru Takenaka,"January 12, 1981",28.0,Japanese Winter Expedition,Japan,Fall,6900m W. Cwm,False
+Marty Hoey,"May 15, 1982",30.0,Whittaker American Expedition,United States,Fall,8000m,False
+Peter Boardman,"May 17, 1982",31.0,British Mount Everest Expedition,United Kingdom,Disappearance (likely accidental death during climb),North-East Ridge (approx. 8200m),False
+Joe Tasker,"May 17, 1982",33.0,British Mount Everest Expedition,United Kingdom,Disappearance (likely accidental death during climb),North-East Ridge (approx. 8200m),False
+Ang Chuldim,"August 31, 1982",20.0,Bill March Canadian Expedition,Nepal,Avalanche,Icefall,False
+Dawa Dorje,"August 31, 1982",42.0,Bill March Canadian Expedition,Nepal,Avalanche,Icefall,False
+Pasang Sona,"August 31, 1982",38.0,Bill March Canadian Expedition,Nepal,Avalanche,Icefall,False
+Blair Griffiths,"September 2, 1982",33.0,Bill March Canadian Expedition,Canada,Crushed under serac,Icefall,False
+Lhakpa Tshering,"September 27, 1982",38.0,Spanish Expedition,Nepal,Internal hemorrhage,6770m,True
+Nima Dorje,"October 14, 1982",38.0,Spanish Expedition,Nepal,Fall,8300m W ridge,True
+Yasuo Kato,"December 28, 1982",33.0,Japanese Expedition,Japan,Disappearance (likely accidental death during climb),Near Summit,False
+Toshiaki Kobayashi,"December 28, 1982",38.0,Japanese Expedition,Japan,Disappearance (likely accidental death during climb),Near Summit,True
+Hironobu Kamuro,"October 8, 1983",38.0,Japanese Expedition,Japan,Fall,Near Summit,True
+Pasang Temba,"October 8, 1983",38.0,Japanese Expedition,Nepal,Fall,8600m SE Ridge,True
+Hiroshi Yoshino,"October 9, 1983",38.0,Japanese Expedition,Japan,Fall,Near Summit,True
+Ang Rinji,"March 26, 1984",38.0,Indian Expedition,Nepal,Avalanche,Icefall,True
+Tony Swierzy,"April 3, 1984",27.0,Micheal Lane British North Face Expedition,United Kingdom,Avalanche,6238m,False
+Hristo Ivanov Prodanov,"April 21, 1984",40.0,Bulgarian West Face Expedition,Bulgaria,Disappearance (likely accidental death during descent),8500m West Ridge,False
+William (Fred) From,"October 9, 1984",28.0,Australian-New Zealand Expedition,Australia,"Fall, while searching for Craig Nottle",8000m,False
+Craig Nottle,"October 9, 1984",23.0,Australian-New Zealand Expedition,Australia,Fall,8000m,False
+Jozef Psotka,"October 16, 1984",50.0,Australian-New Zealand Expedition,Czechoslovakia,Fall,Near Summit,False
+Ang Dorje,"October 24, 1984",35.0,Mission to recover body of Hannelore Schmatz,Nepal,Fall,8400m S.E. Ridge,False
+Yogendra Bahadur Thapa,"October 24, 1984",36.0,Mission to recover body of Hannelore Schmatz,Nepal,Fall,8400m S.E. Ridge,False
+Juanjo Navarro,"May 12, 1985",38.0,Navarrese Expedition,Spain,Fall,7300m,True
+Shinichi Ishii,"September 19, 1985",38.0,Japanese Expedition,Japan,Avalanche,Below North Col,True
+Kiran Inder Kumar,"October 7, 1985",40.0,Indian Expedition,India,Fall,7986m,False
+Jai Bahugana,"October 11, 1985",38.0,Indian Expedition,India,Exposure,South Col,True
+Ranjeet Singh Bakshi,"October 11, 1985",38.0,Indian Expedition,India,Exposure,South Col,True
+Vijay Pal Singh Negi,"October 11, 1985",28.0,Indian Expedition,India,Exposure,South Col,False
+M.U. Bhaskar Rao,"October 11, 1985",38.0,Indian Expedition,India,Exposure,South Col,True
+Víctor Hugo Trujillo,"August 16, 1986",22.0,Adventure Consultants,Chile,Avalanche,Below North Col,False
+Simon Burkhardt,"September 28, 1986",52.0,Eiselin Sports Expedition,Switzerland,Avalanche,7315m,False
+Gyalu,"October 4, 1986",38.0,Eiselin Sports Expedition,Nepal,Crushed under serac,Icefall,True
+Dawa Norbu,"October 17, 1986",38.0,Eiselin Sports Expedition,Nepal,Avalanche,Below North Col,True
+Tsuttin Dorje,"January 30, 1987",38.0,Adventure Consultants,Nepal,Fall,7700m,True
+Roger Marshall,"May 21, 1987",45.0,Adventure Consultants,Canada,Disappearance (likely accidental death during descent),"Hornbein Couloir, Near Summit",False
+Masao Yokoyama,"September 2, 1987",44.0,Japanese Expedition,Japan,Drowned,East Rongbuk Glacier,False
+Mangal Singh,"October 20, 1987",38.0,British Expedition,Nepal,Avalanche,Base camp,True
+Hidetaka Mizukoshi,"April 21, 1988",38.0,"35th Anniversary climb with Chinese, Japanese and Nepalese nationals",Japan,Heart attack (at Base camp),Base camp,True
+Michel Parmentier,"September 20, 1988",38.0,International,France,Exposure,7700m,True
+Narayan Shrestha,"September 21, 1988",38.0,Adventure Consultants,Nepal,Avalanche,7200m,True
+Lhakpa Sonam,"October 13, 1988",38.0,Adventure Consultants,Nepal,Fall,8200m,True
+Pasang Temba,"October 13, 1988",38.0,Adventure Consultants,Nepal,Fall,8200m,True
+Dušan Becík,"October 17, 1988",34.0,IAMES Bratislava Expedition,Czechoslovakia,Disappearance (likely accidental death during descent after reaching South Summit with Jozef Just rejoining group after he summited Everest solo)[75][76],8000m S.W. Ridge,False
+Peter Božík,"October 17, 1988",34.0,IAMES Bratislava Expedition,Czechoslovakia,Disappearance (likely accidental death during descent after reaching South Summit with Jozef Just rejoining group after he summited Everest solo)[75][76],8000m S.W. Ridge,False
+Jaroslav Jaško,"October 17, 1988",26.0,IAMES Bratislava Expedition,Czechoslovakia,Disappearance (likely accidental death during descent after reaching South Summit with Jozef Just rejoining group after he summited Everest solo)[75][76],8000m S.W. Ridge,False
+Jozef Just,"October 17, 1988",33.0,IAMES Bratislava Expedition,Czechoslovakia,Disappearance (likely accidental death during descent after reaching South Summit with Jozef Just rejoining group after he summited Everest solo)[75][76],8000m S.W. Ridge,False
+Ang Lhakpa,"December 23, 1988",38.0,Adventure Consultants,Nepal,Cerebral thrombosis,South Col,True
+Dimitar Ilievski-Murato,"May 10, 1989",35.0,Adventure Consultants,Yugoslavia,Fall,Descending South Col Route,False
+Phu Dorje,"May 16, 1989",38.0,Adventure Consultants,Nepal,Fall,Descending South Col Route,True
+Mirosław Dąsal,"May 27, 1989",37.0,Polish-led expedition that included four U.S. mountaineers,Poland,Avalanche,7200m W ridge,False
+Mirosław Gardzielewski,"May 27, 1989",35.0,Polish-led expedition that included four U.S. mountaineers,Poland,Avalanche,7200m W ridge,False
+Andrzej Heinrich,"May 27, 1989",51.0,Polish-led expedition that included four U.S. mountaineers,Poland,Avalanche,7200m W ridge,False
+Wacław Otręba,"May 27, 1989",50.0,Polish-led expedition that included four U.S. mountaineers,Poland,Avalanche,7200m W ridge,False
+Eugeniusz Chrobak,"May 28, 1989",30.0,Polish-led expedition that included four U.S. mountaineers,Poland,Avalanche injuries,Lhola camp,False
+Ang Pinjo,"December 12, 1989",38.0,South Korean expedition,Nepal,"Altitude sickness, heart attack",Icefall,True
+Rafael Gómez-Menor,"September 14, 1990",38.0,Adventure Consultants,Spain,Avalanche,Icefall,True
+Ang Sona,"September 14, 1990",38.0,Adventure Consultants,Nepal,Avalanche,Icefall,True
+Badri Nath,"September 14, 1990",38.0,Adventure Consultants,Nepal,Avalanche,Icefall,True
+Ham Sang-hun,"October 7, 1990",38.0,Japanese Korean expedition,South Korea,Disappearance (likely accidental death during climb),Icefall,True
+Rüdiger Lang,"May 3, 1991",38.0,Austrian solo expedition,Germany,Exposure,7850m N.E. Ridge,True
+Junichi Futagami,"May 27, 1991",38.0,Japanese solo expedition,Japan,Fall,8700m NE,True
+Deepak Kulkarni,"May 2, 1992",38.0,Indian expedition,India,Exposure,Icefall,True
+Raymond Jacob,"May 2, 1992",38.0,Indian expedition,India,Exposure,Icefall,True
+Subba Singh,"May 11, 1992",43.0,Adventure Consultants,Nepal,Heart attack,Icefall,False
+Sher Singh,"May 23, 1992",38.0,Indian Expedition,India,Fall,Icefall,True
+Manabu Hoshi,"May 23, 1992",38.0,Japanese Expedition,Japan,Disappearance (likely accidental death during climb),8350m NE,True
+Ang Tshering,"January 15, 1993",38.0,Spanish Expedition,Nepal,Fall,Icefall,True
+Pasang Lhamu Sherpa,"April 23, 1993",32.0,Nepalese Expedition,Nepal,Disappearance (likely accidental death during climb),8750m S.E. Ridge,False
+Sonam Tshering,"April 23, 1993",38.0,Nepalese Expedition,Nepal,Avalanche,8750m S.E. Ridge,True
+Lobsang Tshering Bhutia,"May 10, 1993",41.0,40th anniversary of Tenzing Norgay's climb,Nepal,Fall,8750m S.E. Ridge,False
+Nam Won-woo,"May 16, 1993",38.0,South Korean expedition,South Korea,Fall,8450m S.E. Ridge,True
+A Jin-seob,"May 17, 1993",38.0,South Korean expedition,South Korea,Fall,8450m S.E. Ridge,True
+Karl Henize,"October 5, 1993",66.0,American expedition,United States,HAPE,6400m,False
+Antonio Miranda,"October 7, 1993",38.0,Adventure Consultants,Spain,Fall,Icefall,True
+Prem Thapa,"April 6, 1994",38.0,German Expedition,Nepal,Cerebral oedema,Icefall,True
+Shih Fang-Fang 'Norman',"May 9, 1994",27.0,Taiwanese,Taiwan,Exhaustion and/or exposure,Icefall,False
+Giuseppe Vigani,"May 18, 1994",43.0,Italian Expedition,Italy,Fall,North Face,False
+Mike Rheinberger,"May 27, 1994",53.0,Australian Expedition,Australia,"150m fall. He showed signs of exhaustion, dehydration, cerebral oedema, retinal hemorrhages and possible blood clots in his upper legs.",8500m NE,False
+Mingma Norbu,"September 12, 1994",38.0,Norwegian Expedition,Nepal,Avalanche,Icefall,True
+Kami Rita,"May 6, 1995",38.0,American Expedition,Nepal,Fall,Icefall,True
+Lhakpa Nuru,"September 10, 1995",38.0,South Korean Expedition,Nepal,Avalanche,6900m,True
+Zangbu,"October 14, 1995",38.0,South Korean Expedition,Nepal,Fall,Near Summit,True
+Chen Yu-Nan,"May 9, 1996",36.0,"""Makalu"" Gau Ming-Ho Taiwanese expedition",Taiwan,Injuries from a fall,Icefall,False
+Scott Fischer,"May 11, 1996",40.0,Mountain Madness,United States,"Suspected HACE (high-altitude cerebral edema), exhaustion, frostbite and exposure.",8300m S.E. Ridge,False
+Rob Hall,"May 11, 1996",35.0,Adventure Consultants,New Zealand,Exposure,South Summit,False
+Doug Hansen,"May 11, 1996",46.0,Adventure Consultants,United States,Exposure,South Summit,False
+Andrew Harris,"May 11, 1996",31.0,Adventure Consultants,New Zealand,Disappearance (likely accidental death during climb),8700m S.E. Ridge,False
+Yasuko Namba,"May 11, 1996",47.0,Adventure Consultants,Japan,Exposure,South Col,False
+Dorje Morup,"May 11, 1996",47.0,Indo-Tibetan Border Police,India,Exposure,8600m N.E. Ridge,False
+Tsewang Paljor,"May 11, 1996",28.0,Indo-Tibetan Border Police,India,Exposure,8600m N.E. Ridge,False
+Tsewang Samanla,"May 11, 1996",38.0,Indo-Tibetan Border Police,India,Exposure,8600m N.E. Ridge,False
+Reinhard Wlasich,"May 19, 1996",38.0,Austrian,Austria,Altitude sickness,"8300m North Face, Great Couloir",True
+Bruce Herrod,"May 25, 1996",37.0,South African/British,United Kingdom,Rope accident,"S.E. Ridge, Hillary Step",False
+Ngawang Topche,"June 6, 1996",38.0,American,Nepal,Lapsed into coma on 23 Apr 1996; later died in hospital,Camp II,True
+Yves Bouchon,"September 25, 1996",38.0,French/Belgian/Swiss,France,Avalanche,7400m Lhotse Face,True
+Lopsang Jangbu,"September 25, 1996",24.0,Japanese,Nepal,Avalanche,7400m Lhotse Face,False
+Dawa,"September 25, 1996",38.0,South Korea,Nepal,Avalanche,7400m Lhotse Face,True
+Malcolm Duff,"April 23, 1997",38.0,British,United Kingdom,Heart attack (at Base camp),Base Camp,True
+Nima Rinzi,"May 6, 1997",38.0,Malaysian,United Kingdom,Fall,Lhotse Face,True
+Aleksandr Torochin,"May 7, 1997",38.0,Russian,Russia,Fall,8400m N.E. Ridge,True
+Ivan Plotnikov,"May 7, 1997",38.0,Russian,Russia,Exhaustion and/or exposure,8700m N.E. Ridge,True
+Nikolai Shevtchenko,"May 7, 1997",38.0,Russian,Russia,Exhaustion and/or exposure,8700m N.E. Ridge,True
+Mingma,"May 7, 1997",38.0,Russian,Nepal,Fall,N.E. Ridge,True
+Peter Kowalzik,"May 8, 1997",38.0,Polish,Germany,Disappearance (likely accidental death during climb),N.E. Ridge,True
+Tenzing Nuru,"September 8, 1997",38.0,American,Nepal,Disappearance (likely accidental death during climb),S.E. Ridge,True
+Choi Byong-soo,"September 8, 1997",38.0,South Korean,South Korea,Avalanche,North Col Flank,True
+Sergei Arsentiev,"May 24, 1998",38.0,Russian/French,United States,100m fall,N.E. Ridge,True
+Francys Arsentiev,"May 24, 1998",40.0,Russian/French,United States,Exposure and/or cerebral oedema,N.E. Ridge,False
+Mark Jennings,"May 25, 1998",38.0,British,United Kingdom,Exhaustion,N.E. Ridge,True
+Roger Buick,"May 26, 1998",38.0,New Zealand,New Zealand,Exhaustion,N.E. Ridge,True
+Shahid Abdul Khader,"July 24, 1998",21.0,Adventure Consultants,India,Died due to fall,North Col,False
+Vasyl Kopytko,"May 8, 1999",38.0,Ukrainian,Ukraine,Unknown cause,N.E. Ridge,True
+Michael Matthews,"May 13, 1999",22.0,International,United Kingdom,Avalanche,S.E. Ridge,False
+Tadeusz Kudelski,"May 18, 1999",44.0,Polish International,Poland,Fall,N.E. Ridge,False
+Pascal Debrouwer,"May 18, 1999",29.0,Belgian International,Belgium,Fall,N.E. Ridge,False
+Jeppe Stoltz,"May 20, 2000",27.0,Adventure Consultants,Denmark,Fall,N.E. Ridge,False
+Yan Genghua,"May 21, 2000",38.0,Chinese,China,"Disappeared after reaching the north summit; body found on May 27, 2000; likely accidental death during descent",N.E. Ridge,True
+Babu Chiri Sherpa,"April 29, 2001",35.0,Nepalese,Nepal,Fall,N.E. Ridge,False
+Peter Ganner,"May 23, 2001",38.0,Austrian,Austria,Fall,8500m S.E. Ridge,True
+Mark Auricht,"May 24, 2001",38.0,Australian,Australia,Cerebral oedema,N.E. Ridge,True
+Aleksei Nikiforov,"May 24, 2001",38.0,Russian,Russia,"Pre-existing illness exacerbated by freezing conditions, altitude",8500m N.E. Ridge,True
+Sándor Gárdos,"October 17, 2001",38.0,Hungarian,Hungary,Fall,7800m N.E. Ridge,True
+Peter Legate,"April 30, 2002",38.0,British International,United Kingdom,Fall into a crevasse,Below Camp III,False
+Zoran Miletić,"May 19, 2002",38.0,Russian International,Yugoslavia,Exact cause and date of death unknown,7800m N.E. Ridge,True
+Marco Siffredi,"September 8, 2002",23.0,International,France,Snowboarding accident,Hornbein Couloir,False
+Bhim Bahadur Gurung,"May 27, 2003",38.0,Indo-Nepal,Nepal,Fall into a crevasse,5900m Icefall,True
+Jan Krzysztof Liszewski,"May 25, 2003",55.0,Independent,Poland,Fall,7900m N.E. Ridge,False
+Arnaud Saulnier,"May 8, 2003",38.0,French,France,Sickness in tent,5500m S.E. Ridge,True
+Karma Gyalzen Sherpa,"May 24, 2003",38.0,International,Nepal,Altitude sickness,6000m S.E. Ridge,True
+Joon-ho Baek,"May 18, 2004",38.0,South Korean,South Korea,Exposure,8500m N.E. Ridge,False
+Min Jang,"May 18, 2004",28.0,South Korean,South Korea,Exposure,8500m N.E. Ridge,False
+Mu-taek Park,"May 18, 2004",36.0,South Korean,South Korea,Exposure,8500m N.E. Ridge,False
+Nils Antezana,"May 18, 2004",69.0,International,United States,Exposure,8600m S.E. Ridge,False
+Hristo Ganchev Hristov,"May 20, 2004",27.0,Bulgarian,Bulgaria,Exposure,8600m N.E. Ridge,False
+Shoko Ota,"May 20, 2004",63.0,Japanese,Japan,Exposure,8600m N.E. Ridge,False
+Mariana Prodanova Maslarova,"May 23, 2004",43.0,Bulgarian,Bulgaria,Exposure,8700m N.E. Ridge,False
+Sean Egan,"April 28, 2005",63.0,Tim Redpath Expedition,Canada,Heart attack,4600m S.E. Ridge,False
+Michael Corey O'Brien[118],"May 2, 2005",39.0,Charity run with brother,United States,Fall into a crevasse,5800m Icefall South,False
+Marko Lihteneker,"May 21, 2005",45.0,Adventure Consultants,Slovenia,Oxygen problems,8600m N.E. Ridge,False
+Sirigereshiva Shankarappa Chaitanya,"May 30, 2005",38.0,India,India,Exposure,8700m N.E. Ridge,True
+Dieter Kramer,"June 4, 2005",38.0,German,Germany,Exposure,8000m N.E.,True
+Robert William Milne,"June 5, 2005",49.0,Adventure Consultants,United Kingdom,Organ failure due to freezing conditions,8200m S.E. Ridge,False
+Tuk Bahadur Thapa Magar Sherpa,"April 7, 2006",38.0,American,Nepal,Altitude,5500m N.E. Ridge,True
+Ang Phinjo Sherpa,"April 21, 2006",50.0,American,Nepal,Avalanche,5900m Icefall,False
+Lhakpa Tseri,"April 21, 2006",38.0,American,Nepal,Avalanche,5900m Icefall,True
+Dawa Temba,"April 21, 2006",38.0,American,Nepal,Avalanche,5900m Icefall,True
+Jacques-Hugues Letrange,"May 6, 2006",38.0,American,France,Exhaustion,N.E. Ridge,True
+Srikrishna,"May 14, 2006",38.0,Indian,India,Fall,8600m N.E. Ridge,True
+David Sharp,"May 15, 2006",34.0,Asian Trekking,United Kingdom,Exposure and/or exhaustion,8600m N.E. Ridge,False
+Tomas Olsson,"May 16, 2006",30.0,Adventure Consultants,Sweden,Fall,8700m Norton Couloir,False
+Vitor Negrete,"May 19, 2006",38.0,Asian Trekking,Brazil,Exposure and/or exhaustion,"Camp III, 8200m N.E. Ridge",False
+Igor Plyushkin,"May 22, 2006",38.0,Asian Trekking,Russia,Altitude sickness,7800m N.E. Ridge,True
+Thomas Weber,"May 25, 2006",38.0,Asian Trekking,Germany,Altitude sickness,8700m N.E. Ridge,True
+Dawa Sherpa,"April 26, 2007",38.0,Adventure Consultants,Nepal,Avalanche,7200m South Col,True
+Shinichi Ishii,"May 17, 2007",38.0,Adventure Consultants,Japan,Avalanche,8650m,True
+Libor Kozak,"May 17, 2007",38.0,Adventure Consultants,Czech,Avalanche,8300m,True
+Yoshitomi Okura,"May 16, 2007",62.0,Japanese,Japan,Avalanche,N.E. Ridge,False
+Maurizio Pierangelo,"May 17, 2007",46.0,Italian,Italy,Avalanche,N.E. Ridge,False
+Oh Hee-joon,"May 17, 2007",37.0,South Korean,South Korea,Avalanche,S.W. Face,False
+Lee Hyun-jo,"May 17, 2007",34.0,Adventure Consultants,South Korea,Avalanche,S.W. Face,False
+Uwe Gianni Goltz,"May 21, 2008",44.0,Sherpas documentary team,Switzerland,Exhaustion,8000m South Col,False
+Lhakpa Nuru,"May 7, 2009",38.0,Eco Everest Expedition,Nepal,Avalanche,Icefall,True
+Věslav Chrzaszcz,"May 18, 2009",47.0,Eco Everest Expedition,Czech,Heart attack,Icefall,False
+Wenhong Wu,"May 19, 2009",41.0,Adventure Consultants,China,Altitude sickness,8750m,False
+Frank Ziebarth,"May 21, 2009",29.0,Adventure Consultants,Canada,Hypothermia and lack of oxygen,8700m North Summit,False
+László Várkonyi,"April 26, 2010",54.0,Adventure Consultants,Hungary,Avalanche crevasse fall,North Col,False
+Tom Jørgensen,"May 19, 2010",56.0,Adventure Consultants,Denmark,HACE,Icefall,False
+Peter Kinloch,"May 26, 2010",28.0,International,United Kingdom,Exhaustion,8600m,False
+Rick Hitch,"May 1, 2011",55.0,International,United States,Heart attack,7010m,False
+Alston Mendonca,"May 4, 2011",55.0,International,India,Heart Break,7010m,False
+Shailendra Kumar Upadhyaya,"May 9, 2011",82.0,Nepal,Nepal,Altitude sickness,Base Camp,True
+Takashi Ozaki,"May 12, 2011",58.0,International,Japan,Altitude sickness,8400m The Balcony,False
+John Delaney,"May 21, 2011",42.0,International,Ireland,Altitude sickness,8400m The Balcony,False
+Hiroaki Kino,"September 15, 2011",48.0,Adventure Consultants,Japan,Cerebral apoplexy,Lower Icefall,False
+Dawa Tenzing,"April 5, 2012",38.0,Himex,Nepal,Stroke (CVA),Icefall,True
+Karsang Namgyal Sherpa,"April 19, 2012",38.0,Prestige Adventures,Nepal,Altitude sickness,Base Camp,True
+Ramesh Gulve,"April 20, 2012",33.0,Pune team,India,Stroke,Base Camp,False
+Namgyal Tshering Sherpa,"April 21, 2012",28.0,Adventure Consultants,Nepal,Fall into a crevasse,Camp I,False
+Shriya Shah-Klorfine,"May 19, 2012",33.0,Utmost Adventures,Canada,Exhaustion,Below Balcony 8300m,False
+Eberhard Schaaf,"May 19, 2012",61.0,Asian Trekking,Germany,Cerebral oedema,Hillary Step,False
+Song Won-bin,"May 19, 2012",44.0,Korean Everest & Lhotse Expedition,South Korea,Fall,Balcony,False
+Ha Wenyi,"May 20, 2012",55.0,Mountain Experience,China,Suspected altitude sickness,Balcony,False
+Juan José Polo Carbayo,"May 20, 2012",43.0,Himalayan Guides,Spain,Exhaustion,8300m N.E. Ridge,False
+Ralf D. Arnold,"May 20, 2012",43.0,Monterosa,Germany,Exhaustion and related complications after breaking leg at Second Step,8300m N.E. Ridge,False
+Mingma Sherpa,"April 7, 2013",45.0,Destination Himalaya,Nepal,Falling into a crevasse,Between Camps I and II in the Western Cwm,False
+DaRita Sherpa,"May 5, 2013",37.0,International Mountain Guides,Nepal,Suspected cardiac arrest,Camp III on south side,False
+Sergey Ponomarev,"May 5, 2013",38.0,7 Summits Club Everest expedition,Russia,Suspected cardiac arrest,At 100m above ABC on north side (at about 6500m),True
+Lobsang Sherpa,"May 7, 2013",22.0,Chinese expedition team,Nepal,Fall,Between Camp II and Camp III on descent from Camp IV (on south side),False
+Alexey Bolotov,"May 15, 2013",50.0,Russian South-West Face expedition,Russia,Fall,5600m Icefall,False
+Namgyal Sherpa,"May 17, 2013",35.0,Adventure Consultants,Nepal,Avalanche,8300m N.E. Ridge,False
+Seo Sung-ho,"May 21, 2013",33.0,Zero to 8848 expedition,South Korea,Suspected altitude sickness,On descent (south side),False
+Sajal Khaled (Mohammed Khaled Hossain),"May 21, 2013",35.0,Adventure Consultants,Bangladesh,Suspected altitude sickness,South Col Camp,False
+Unknown climber,"May 22, 2013",38.0,Adventure Consultants,Nepal,Suspected altitude sickness,Camp IV (south side) in tent,True
+Mingma Tenzing Sherpa,"April 2, 2014",38.0,Peak Freaks Expedition,Nepal,HAPE,Everest Base Camp,True
+Mingma Nuru Sherpa,"April 18, 2014",46.0,NBC Everest Expedition,Nepal,2014 Mount Everest Avalanche,Icefall,False
+Dorji Sherpa,"April 18, 2014",38.0,NBC Everest Expedition,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Ang Tshiri Sherpa,"April 18, 2014",38.0,AAI Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Nima Sherpa,"April 18, 2014",38.0,AAI Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Tenzing Chottar Sherpa,"April 18, 2014",38.0,AAI Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Phurba Ongyal Sherpa,"April 18, 2014",38.0,Adventure Consultants,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Lapka Tenjing Sherpa,"April 18, 2014",38.0,Adventure Consultants,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Chhiring Ongchu Sherpa,"April 18, 2014",38.0,Adventure Consultants,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Dorjee Khatri,"April 18, 2014",38.0,Adventurist Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Then Dorjee Sherpa,"April 18, 2014",38.0,Adventurist Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Phur Temba Sherpa,"April 18, 2014",38.0,Adventurist Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Pasang Karma Sherpa,"April 18, 2014",38.0,Jagged Globe Everest Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Ankaji Sherpa,"April 18, 2014",38.0,Everest Chinese Dream Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+PemTenji Sherpa,"April 18, 2014",38.0,Everest Chinese Dream Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Aash Bahadur Gurung,"April 18, 2014",38.0,Everest Chinese Dream Expedition 2014,Nepal,2014 Mount Everest Avalanche,Icefall,True
+Daniel Paul Fredinburg,"April 25, 2015",33.0,2015 Jagged Globe Everest Expedition,United States,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Marisa Eve Girawong,"April 25, 2015",28.0,H.G. Nuptse Expedition 2015,United States,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Thomas Ely Taplin,"April 25, 2015",61.0,TET Films & Photography,United States,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Pemba Sherpa,"April 25, 2015",19.0,Adventure Consultants,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Dawa Tsering Sherpa,"April 25, 2015",33.0,Adventure Consultants,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Maila (Milan) Rai,"April 25, 2015",41.0,Adventure Consultants,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Chhimi Dawa Sherpa,"April 25, 2015",27.0,Adventure Consultants,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Pema Yishi (Hissi) Sherpa,"April 25, 2015",38.0,Adventure Consultants,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,True
+Pasang Temba Sherpa,"April 25, 2015",38.0,Tim Mosedale Everest Expedition (or H.G. Everest Expedition 2015),Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,True
+Krishna Kumar Rai,"April 25, 2015",38.0,Tim Mosedale Everest Expedition (or H.G. Everest Expedition 2015),Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,True
+Tenzing (Tengien) Bhote,"April 25, 2015",38.0,Tim Mosedale Everest Expedition (or H.G. Everest Expedition 2015),Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,True
+Renu Fotedar,"April 25, 2015",49.0,First Chinese Women Everest Expedition,Australia,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Lhakpa Chhiring Sherpa,"April 25, 2015",33.0,First Chinese Women Everest Expedition,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Vinh B Truong,"April 25, 2015",48.0,Trekker,United States,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Shiva Kumar Shrestha,"April 25, 2015",25.0,Step Up Campaign Everest,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,False
+Unknown climber,"April 25, 2015",38.0,Adventure Consultants,Nepal,Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,True
+Jangbu Sherpa,"May 1, 2015",38.0,Adventure Consultants,Nepal,Died in Kathmandu due to injuries sustained in the Base Camp avalanche following the April 2015 Nepal earthquake,Base Camp,True
+Charles MacAdams,"May 11, 2016",62.0,Adventure Consultants,Canada,Cardiac event,Base Camp North Side,False
+Phurba Sherpa,"May 19, 2016",25.0,Adventure Consultants,Nepal,Fall,Near summit,False
+Eric Arnold,"May 21, 2016",35.0,Arnold Coster Expeditions,Netherlands,Altitude sickness,South Col / Camp IV,False
+Marisa Elizabeth Strydom,"May 22, 2016",34.0,Arnold Coster Expeditions,Australia,"Snow blindness, stroke",Near Camp IV,False
+Subhash Pal,"May 22, 2016",44.0,Trekking Camp Nepal,India,Altitude sickness,Around Camp III,False
+Paresh Chandra Nath,"May 22, 2016",58.0,Trekking Camp Nepal,India,Exposure,The Balcony,False
+Goutam Ghosh,"May 22, 2016",50.0,Trekking Camp Nepal,India,Exposure,The Balcony,False
+Min Bahadur Sherchan,"May 5, 2017",85.0,Adventure Consultants,Nepal,Heart Attack,Base Camp,True
+Roland Yearwood,"May 20, 2017",50.0,Everest Parivar Treks,United States,Altitude sickness,Balcony,False
+Vladimír Štrba,"May 21, 2017",48.0,Everest Hard Way Slovak Expedition 2017,Slovakia,Altitude sickness,"Camp IV, in the tent",False
+Francesco Enrico Marchetti,"May 21, 2017",54.0,Expedition Himalaya,Australia,Altitude sickness,Camp IV,False
+Ravi Kumar,"May 21, 2017",27.0,Arun Treks and Expedition,India,Fall into a 200m crevasse,Balcony,False
+Lam Babu Sherpa,"May 14, 2018",45.0,Seven Summit Treks,Nepal,Disappearance (reportedly suffered from snow blindness),Above South Col,False
+Pasang Norbu Sherpa,"May 18, 2018",41.0,7 Summits Club Expedition,Nepal,Stroke,8550m N.E. Ridge,False
+Gjeorgi Petkov,"May 20, 2018",63.0,Tim Mosedale Everest Expedition Spring 2018,North Macedonia,Cardiac arrest,Above Camp III,False
+Nobukazu Kuriki,"May 21, 2018",36.0,Solo,Japan,"Hypothermia, had previously reported ""persistent cough and pain"" during attempt",Camp II,False
+Damai Sarki Sherpa,"May 21, 2018",37.0,"Himalayan Ascent, Seven Summit Treks",Nepal,Fall into a crevasse,Camp II,False
+Chris Daly,"April 20, 2019",35.0,Solo,United States,Died after a fall while trekking down from base camp,Base Camp,False
+Séamus (Shay) Lawless,"May 16, 2019",39.0,Seven Summit Treks,Ireland,Presumed dead after fall,Balcony,False
+Ravi Thakar,"May 17, 2019",28.0,Seven Summit Treks,India,Altitude sickness,Camp 4,False
+Donald Cash,"May 22, 2019",55.0,Pioneer Adventures,United States,Altitude sickness,Hillary Step,False
+Nihal Bagwan,"May 23, 2019",27.0,Peak Promotions,India,Exhaustion on descent,near South Col,False
+Ernst Landgraf,"May 23, 2019",65.0,Kobler & Partners,Austria,Exhaustion on descent,Tibet side at 8600m after summiting,False
+Anjali S Kulkarni,"May 23, 2019",54.0,Transcent or Arun Treks,India,Exhaustion on descent,Near Camp IV,False
+Kalpana Dash,"May 23, 2019",52.0,Dreamers Destination Treks,India,Exhaustion on descent,Near Balcony,False
+Kevin Hynes,"May 24, 2019",56.0,360 Expeditions,Ireland,Altitude sickness,North Col,False
+Dhruba Bista,"May 24, 2019",38.0,Himalayan Ecstasy (Ski) Treks,Nepal,Exhaustion and altitude sickness,Base Camp following evacuation from Camp III,True
+Robin Haynes Fisher,"May 25, 2019",44.0,Summit Climb/ Everest Parivar Expedition Ltd,United Kingdom,Exhaustion during descent,100 metres below peak,False
+Christopher Jon Kulish,"May 27, 2019",62.0,Climbing the Seven Summits,United States,Cardiac event during descent,South Col,False
+Puwei Liu,"May 12, 2021",55.0,Seven Summit Treks,United States,Exhaustion,Near South Summit,False
+Abdul Waraich,"May 12, 2021",41.0,Seven Summit Treks,Switzerland,Exhaustion,Near South Summit,False
+Pemba Tashi Sherpa,"May 18, 2021",28.0,Climbing the Seven Summits,Nepal,Fall into a crevasse,Between Camp I & Camp II,False
+Wong Dorchi Sherpa,"May 23, 2021",38.0,7 Summits Club,Nepal,Avalanche,near South Col,True
