@@ -8,8 +8,8 @@ from datetime import datetime
 
 # Loading dataframes - one for aggregating and one for predicting incidents and ignoring plot warning
 warnings.filterwarnings("ignore", message="The figure layout has changed to tight")
-df = pd.read_pickle("../OLA-1/data/interim/task2_data_processed.pkl")
-df_linear = pd.read_pickle("../OLA-1/data/interim/task2_data_processed.pkl")
+df = pd.read_pickle("../data/interim/task2_data_processed.pkl")
+df_linear = pd.read_pickle("../data/interim/task2_data_processed.pkl")
 
 # Task 3.1: Selecting the columns I'm going to use and then im aggregating the data
 relevant_columns = df[['Age_Group', 'Nationality', 'Cause of death']]

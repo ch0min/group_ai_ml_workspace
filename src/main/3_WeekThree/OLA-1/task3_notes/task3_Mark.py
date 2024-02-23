@@ -11,7 +11,7 @@ import pickle
 # ************************************************************** #
 
 
-df = pd.read_pickle("../OLA-1/data/interim/task2_data_processed.pkl")
+df = pd.read_pickle("../data/interim/task2_data_processed.pkl")
 
 
 # --------------------------------------------------------------

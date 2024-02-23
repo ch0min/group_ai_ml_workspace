@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pickle
 
 
-df = pd.read_pickle("../OLA-1/data/interim/task1_data_processed.pkl")
+df = pd.read_pickle("../data/interim/task1_data_processed.pkl")
 
 ############################
 ########## TASK 3 ##########
