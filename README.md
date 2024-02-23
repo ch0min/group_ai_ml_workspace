@@ -1,7 +1,7 @@
 **_FOLDERS_**
 data folder for datasets
 
-- raw er for rå datasets så lav en COPY af raw datasettet før vi cleaner det og fjern _raw i navnet.
+- raw er for rå datasets så lav en COPY af raw datasettet før vi cleaner det og fjern \_raw i navnet.
 - processed er for cleaned datasets
 
   src folder for assignments, tasks og opgaveløsninger
