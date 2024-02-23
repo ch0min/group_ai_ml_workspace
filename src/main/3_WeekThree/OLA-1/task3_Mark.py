@@ -37,6 +37,14 @@ df["Period of Death"] = np.where(df["Year"] < 2000, "Before 2000", "2000 and Aft
 death_count_by_period = df["Period of Death"].value_counts()
 print(death_count_by_period)
 
+plt.figure(figsize=(8, 5))
+sns.countplot(x="Period of Death", data=df)
+plt.title("Number of Deaths Before and After 2000")
+plt.xlabel("Period of Death")
+plt.ylabel("Number of Deaths")
+plt.savefig("./figures/number_of_deaths_before_2000_and_after.png")
+plt.show()
+
 
 # Creating dataframe for before and after 2000
 deaths_before_2000 = df[df["Year"] < 2000]
