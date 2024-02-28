@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from zlib import crc32
 from sklearn.model_selection import train_test_split, StratifiedShuffleSplit
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder
+from sklearn.base import BaseEstimator, TransformerMixin
 
 # --------------------------------------------------------------
 # 1. Find and Download a Dataset
@@ -106,3 +109,102 @@ for set_ in (strat_train_set, strat_test_set):
 # --------------------------------------------------------------
 
 df = strat_train_set.copy()
+
+df.plot(
+    kind="scatter",
+    x="longitude",
+    y="latitude",
+    alpha=0.4,
+    s=df["population"] / 100,
+    label="population",
+    figsize=(10, 7),
+    c="median_house_value",
+    cmap=plt.get_cmap("jet"),
+    colorbar=True,
+)
+
+corr_matrix = df.corr(numeric_only=True)
+corr_matrix["median_house_value"].sort_values(ascending=False)
+
+# feature engineering
+df["rooms_per_household"] = df["total_rooms"] / df["households"]
+df["bedrooms_per_rooms"] = df["total_bedrooms"] / df["total_rooms"]
+df["population_per_household"] = df["population"] / df["households"]
+
+
+df = strat_train_set.drop("median_house_value", axis=1)
+df_labels = strat_train_set["median_house_value"].copy()
+
+# data cleaning
+
+# missing values in total_bedrooms:
+# 1. get rid of the corresponding districts
+df.dropna(subset=["total_bedrooms"])
+# 2 get rid of the whole attribute
+df.drop("total_bedrooms", axis=1)
+# 3 set the values to some value(zeo, the mean, the median, etc.)
+median = df["total_bedrooms"].median()
+df["total_bedrooms"].fillna(median, inplace=True)
+
+# using sklearn imputer
+imputer = SimpleImputer(strategy="median")
+
+df_num = df.drop("ocean_proximity", axis=1)
+
+imputer.fit(df_num)
+
+
+imputer.statistics_
+
+df_num.median().values
+
+X = imputer.transform(df_num)
+
+df_tr = pd.DataFrame(X, columns=df_num.columns, index=df_num.index)
+
+
+# categorical attributes
+df_cat = df[["ocean_proximity"]]
+df_cat.head()
+
+ordinal_encoder = OrdinalEncoder()
+df_cat_encoded = ordinal_encoder.fit_transform(df_cat)
+df_cat_encoded[:10]
+
+ordinal_encoder.categories_
+
+# one-hot encoding
+
+cat_encoder = OneHotEncoder()
+df_cat_1hot = cat_encoder.fit_transform(df_cat)
+
+df_cat_1hot
+df_cat_1hot.toarray()
+
+cat_encoder.categories_
+
+# custom transformers
+
+rooms_ix, bedrooms_ix, population_ix, households_ix = 3, 4, 5, 6
+
+
+class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
+    def __init__(self, add_bedrooms_per_room=True):  # no *args or **kargs
+        self.add_bedrooms_per_room = add_bedrooms_per_room
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        rooms_per_household = X[:, rooms_ix] / X[:, households_ix]
+        population_per_household = X[:, population_ix] / X[:, rooms_ix]
+        if self.add_bedrooms_per_room:
+            return np.c_[
+                X, rooms_per_household, population_per_household, bedrooms_per_room
+            ]
+        else:
+            return np.c_[X, rooms_per_household, population_per_household]
+
+
+attr_adder = CombinedAttributesAdder(add_bedrooms_per_room=False)
+housing_extra_attribs = attr_adder.transform(df.values)
