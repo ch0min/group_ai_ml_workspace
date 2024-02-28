@@ -7,8 +7,10 @@ import numpy as np
 from zlib import crc32
 from sklearn.model_selection import train_test_split, StratifiedShuffleSplit
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder
+from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder, StandardScaler
 from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
 
 # --------------------------------------------------------------
 # 1. Find and Download a Dataset
@@ -197,8 +199,9 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         rooms_per_household = X[:, rooms_ix] / X[:, households_ix]
-        population_per_household = X[:, population_ix] / X[:, rooms_ix]
+        population_per_household = X[:, population_ix] / X[:, households_ix]
         if self.add_bedrooms_per_room:
+            bedrooms_per_room = X[:, bedrooms_ix] / X[:, rooms_ix]
             return np.c_[
                 X, rooms_per_household, population_per_household, bedrooms_per_room
             ]
@@ -208,3 +211,24 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 
 attr_adder = CombinedAttributesAdder(add_bedrooms_per_room=False)
 housing_extra_attribs = attr_adder.transform(df.values)
+
+# transformation pipelines
+
+num_pipeline = Pipeline(
+    [
+        ("imputer", SimpleImputer(strategy="median")),
+        ("attribs_adder", CombinedAttributesAdder()),
+        ("std_scaler", StandardScaler()),
+    ]
+)
+df_num_tr = num_pipeline.fit_transform(df_num)
+
+
+num_attribs = list(df_num)
+cat_attribs = ["ocean_proximity"]
+
+full_pipeline = ColumnTransformer(
+    [("num", num_pipeline, num_attribs), ("cat", OneHotEncoder(), cat_attribs)]
+)
+
+df_prepared = full_pipeline.fit_transform(df)
