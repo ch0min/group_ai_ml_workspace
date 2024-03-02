@@ -322,7 +322,7 @@ cvres = grid_search.cv_results_
 for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
     print(np.sqrt(-mean_score), params)
 
-feature_importance = grid_search.best_estimator_.feature_importance
+feature_importance = grid_search.best_estimator_.feature_importances_
 print(feature_importance)
 
 extra_attribs = ["rooms_perhhold", "pop_per_hhold", "bedrooms_per_room"]
