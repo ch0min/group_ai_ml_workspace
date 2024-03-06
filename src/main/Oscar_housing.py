@@ -5,12 +5,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from zlib import crc32
-from sklearn.model_selection import train_test_split, StratifiedShuffleSplit
+from sklearn.model_selection import (
+    train_test_split,
+    StratifiedShuffleSplit,
+    cross_val_score,
+    GridSearchCV,
+)
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder, StandardScaler
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from scipy import stats
 
 # --------------------------------------------------------------
 # 1. Find and Download a Dataset
@@ -232,3 +242,124 @@ full_pipeline = ColumnTransformer(
 )
 
 df_prepared = full_pipeline.fit_transform(df)
+
+# Training model
+
+# Linear regression
+lin_reg = LinearRegression()
+lin_reg.fit(df_prepared, df_labels)
+
+some_data = df.iloc[:5]
+some_labels = df_labels.iloc[:5]
+some_data_prepared = full_pipeline.transform(some_data)
+print("Predictions:", lin_reg.predict(some_data_prepared))
+print("Labels:", list(some_labels))
+
+df_predictions = lin_reg.predict(df_prepared)
+lin_mse = mean_squared_error(df_labels, df_predictions)
+lin_rmse = np.sqrt(lin_mse)
+print(lin_rmse)
+
+# Decision tree
+tree_reg = DecisionTreeRegressor()
+tree_reg.fit(df_prepared, df_labels)
+df_predictions = tree_reg.predict(df_prepared)
+tree_mse = mean_squared_error(df_labels, df_predictions)
+tree_rmse = np.sqrt(tree_mse)
+print(tree_rmse)
+
+scores = cross_val_score(
+    tree_reg, df_prepared, df_labels, scoring="neg_mean_squared_error", cv=10
+)
+tree_rmse_scores = np.sqrt(-scores)
+
+
+def display_scores(scores):
+    print("Scores:", scores)
+    print("Mean:", scores.mean())
+    print("Standard deviation:", scores.std())
+
+
+display_scores(tree_rmse_scores)
+
+lin_scores = cross_val_score(
+    lin_reg, df_prepared, df_labels, scoring="neg_mean_squared_error", cv=10
+)
+
+lin_rmse_scoring = np.sqrt(-lin_scores)
+display_scores(lin_rmse_scoring)
+forest_reg = RandomForestRegressor()
+forest_reg.fit(df_prepared, df_labels)
+forest_mse = mean_squared_error(df_labels, df_predictions)
+forest_rmse = np.sqrt(forest_mse)
+print(forest_rmse)
+scores = cross_val_score(
+    forest_reg, df_prepared, df_labels, scoring="neg_mean_squared_error", cv=10
+)
+forest_rmse_scores = np.sqrt(-scores)
+display_scores(forest_rmse_scores)
+
+# grid search
+
+param_grid = [
+    {"n_estimators": [3, 10, 30], "max_features": [2, 4, 6, 8]},
+    {"bootstrap": [False], "n_estimators": [3, 10], "max_features": [2, 3, 4]},
+]
+forest_reg = RandomForestRegressor()
+grid_search = GridSearchCV(
+    forest_reg,
+    param_grid,
+    cv=5,
+    scoring="neg_mean_squared_error",
+    return_train_score=True,
+)
+
+grid_search.fit(df_prepared, df_labels)
+
+print(grid_search.best_params_)
+print(grid_search.best_estimator_)
+cvres = grid_search.cv_results_
+for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
+    print(np.sqrt(-mean_score), params)
+
+feature_importance = grid_search.best_estimator_.feature_importances_
+print(feature_importance)
+
+extra_attribs = ["rooms_perhhold", "pop_per_hhold", "bedrooms_per_room"]
+cat_encoder = full_pipeline.named_transformers_["cat"]
+cat_one_hot_attribs = list(cat_encoder.categories_[0])
+attributes = num_attribs + extra_attribs + cat_one_hot_attribs
+sorted(zip(feature_importance, attributes), reverse=True)
+
+final_model = grid_search.best_estimator_
+
+
+X_test = strat_test_set.drop("median_house_value", axis=1)
+y_test = strat_test_set["median_house_value"].copy()
+
+X_test_prepared = full_pipeline.transform(X_test)
+
+final_predictions = final_model.predict(X_test_prepared)
+
+final_mse = mean_squared_error(y_test, final_predictions)
+
+final_rmse = np.sqrt(final_mse)
+
+confidence = 0.95
+squared_errors = (final_predictions - y_test) ** 2
+final = np.sqrt(
+    stats.t.interval(
+        confidence,
+        len(squared_errors) - 1,
+        loc=squared_errors.mean(),
+        scale=stats.sem(squared_errors),
+    )
+)
+print(final)
+
+# exercises:
+# 1. Try a Support Vector Machine regressor (sklearn.svm.SVR) with various hyperparameters, such as kernel="linear" (with various values for the C and gamma hyperparameters). Dont worry about what these hyperparameters mean for now. How does the best SVR predictor perform?
+# 2. Try replacing GridSearchCV with RandomizedSearchCV.
+# 3. Try adding a transformer in the preparation pipeline to select only the most important attributes
+# 4. Try creating a single pipeline that does the full data preparation plus the final prediction
+# 5. Automatically explore some preparation options using GridSearchCV
