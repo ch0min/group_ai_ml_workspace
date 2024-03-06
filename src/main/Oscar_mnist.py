@@ -15,6 +15,9 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.multiclass import OneVsOneClassifier
+from sklearn.preprocessing import StandardScaler
 
 mnist = fetch_openml("mnist_784", version=1)
 mnist.keys()
@@ -38,14 +41,14 @@ X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
 y_train_5 = y_train == 5
 y_test_5 = y_test == 5
 
-sdg_clf = SGDClassifier(random_state=42)
-sdg_clf.fit(X_train, y_train_5)
+sgd_clf = SGDClassifier(random_state=42)
+sgd_clf.fit(X_train, y_train_5)
 
-sdg_clf.predict([some_digit])
+sgd_clf.predict([some_digit])
 
 skfolds = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
 for train_index, test_index in skfolds.split(X_train, y_train_5):
-    clone_clf = clone(sdg_clf)
+    clone_clf = clone(sgd_clf)
     X_train_folds = X_train.iloc[train_index]  # use iloc to index rows
     y_train_folds = y_train_5[train_index]
     X_test_fold = X_train.iloc[test_index]  # use iloc to index rows
@@ -56,7 +59,7 @@ for train_index, test_index in skfolds.split(X_train, y_train_5):
     n_correct = sum(y_pred == y_test_fold)
     print(n_correct / len(y_pred))
 
-cross_val_score(sdg_clf, X_train, y_train_5, cv=3, scoring="accuracy")
+cross_val_score(sgd_clf, X_train, y_train_5, cv=3, scoring="accuracy")
 
 
 class Never5Classifier(BaseEstimator):
@@ -70,7 +73,7 @@ class Never5Classifier(BaseEstimator):
 never_5_clf = Never5Classifier()
 cross_val_score(never_5_clf, X_train, y_train_5, cv=3, scoring="accuracy")
 
-y_train_pred = cross_val_predict(sdg_clf, X_train, y_train_5, cv=3)
+y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_5, cv=3)
 
 confusion_matrix(y_train_5, y_train_pred)
 
@@ -83,7 +86,7 @@ precision_score(y_train_5, y_train_pred)
 recall_score(y_train_5, y_train_pred)
 f1_score(y_train_5, y_train_pred)
 
-y_scores = sdg_clf.decision_function([some_digit])
+y_scores = sgd_clf.decision_function([some_digit])
 threshold = 0
 
 y_some_digit_pred = y_scores > threshold
@@ -92,7 +95,7 @@ threshold = 8000
 y_some_digit_pred = y_scores > threshold
 
 y_scores = cross_val_predict(
-    sdg_clf, X_train, y_train_5, cv=3, method="decision_function"
+    sgd_clf, X_train, y_train_5, cv=3, method="decision_function"
 )
 
 precisions, recalls, thresholds = precision_recall_curve(y_train_5, y_scores)
@@ -161,3 +164,35 @@ plot_roc_curve(fpr_forest, tpr_forest, "Random Forest")
 plt.legend(loc="lower right")
 
 roc_auc_score(y_train_5, y_scores_forest)
+
+# multiclass classification
+svm_clf = SVC()
+svm_clf.fit(X_train, y_train)
+svm_clf.predict([some_digit])
+
+some_digit_scores = svm_clf.decision_function([some_digit])
+
+np.argmax(some_digit_scores)
+svm_clf.classes_
+svm_clf.classes_[5]
+
+ovr_clf = OneVsOneClassifier(SVC())
+ovr_clf.fit(X_train, y_train)
+ovr_clf.predict([some_digit])
+len(ovr_clf.estimators_)
+
+
+sgd_clf.fit(X_train, y_train)
+sgd_clf.predict([some_digit])
+sgd_clf.decision_function([some_digit])
+cross_val_score(sgd_clf, X_train, y_train, cv=3, scoring="accuracy")
+
+
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train.astype(np.float64))
+cross_val_score(sgd_clf, X_train_scaled, y_train, cv=3, scoring="accuracy")
+
+y_train_pred = cross_val_predict(sgd_clf, X_train_scaled, y_train, cv=3)
+conf_mx = confusion_matrix(y_train, y_train_pred)
+
+plt.matshow(conf_mx, cmap=plt.cm.gray)
